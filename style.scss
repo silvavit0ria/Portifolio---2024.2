@@ -1,0 +1,556 @@
+$font-titulo:"Atkinson Hyperlegible", sans-serif;
+$font-text: "Inter", sans-serif;
+$cor-fundo:#A6D6F6;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+.nav-bar-mobile{
+    display: none;
+}
+#botao-nav-bar{
+    display: none;
+}
+.nav-bar{
+    margin: 2rem 2rem;
+
+    img{
+        width: 3vw;
+        transition: transform 0.9s ease;
+    }
+    img:hover{
+        transform: scale(1.10);
+    }
+   
+    ul{
+        display: flex;
+        float: inline-end;
+        margin: 0 5rem;
+        li{
+            padding:  1.5rem 1.5rem;
+            list-style-type: none;
+                a{
+                    font-family: $font-titulo;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: black;
+                   
+                } a:hover{
+                        text-decoration: underline ;
+                    
+                    }
+        }
+    }
+}
+.intro-page{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 5rem; 
+     .intro-text{
+         margin: 5rem 5rem; 
+            h1{
+                    font-size: 3rem;
+                    font-family: $font-titulo;
+                    font-weight: 800;
+            }
+             p{
+                    width: 35vw;
+                    font-family: $font-text;
+                    font-weight: 400;
+            }
+            
+        }
+     }
+    .intro-image{
+        background-color: $cor-fundo;
+        margin: 0 9rem;
+        border-radius: 100%;
+        img{
+            width: 25vw;
+        }
+}
+.projeto-page{
+    display: flex;
+    padding: 3rem 2rem 1rem;
+    background-color: #0b9af956;
+
+    
+    .projeto-item{
+        margin: 0 2rem;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease;
+        border-radius: 20px;
+        border: solid rgba(0, 0, 0, 0.052);
+        background-color: #f5f5f5;
+
+        h2{
+            text-align: center;
+            font-family: $font-titulo;
+            font-weight: 800;
+            padding: 1rem 0 0;
+  
+        }
+        figure{
+            img{
+               width: 100%;
+               transition: transform 0.9s ease;
+               cursor: pointer;
+            }
+            figcaption{
+                text-align: center;
+                font-family: $font-text;
+                font-size: 0.8rem;
+                font-weight: 500;
+
+            }
+        }
+       &:hover{
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        border-radius: 20px;
+        background-color: white;
+        h2{
+            transition: all 0.3s ease;
+
+        }
+        #image-projeto{
+            transform: scale(1.09);
+        }
+    }  
+    }
+   
+    .projeto-icons{
+        padding: 1rem;
+        margin-top: auto;
+        text-align: end;
+       img{
+        width: 2vw;
+       }
+    }
+}
+.botao-projeto{
+    text-align: center;
+    margin: 1rem;
+    button{
+        background-color: $cor-fundo;
+       padding: 0.5rem 2rem;
+       border: 0;
+       border-radius: 10px;
+       font-family: $font-titulo;
+       font-weight: 600;
+       cursor: pointer;
+       transition: all 0.3s ease;
+       font-size: 0.9rem;
+     
+       a{
+        text-decoration: none;
+          color: rgba(255, 255, 255, 0.34);
+       }
+    }
+    button:hover{
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        a{
+          color: rgb(255, 255, 255);  
+        }
+        
+       
+    }
+}
+.sobre-page{
+    display: flex;
+    padding: 2rem 5rem;
+
+
+    .sobre-text{
+        margin: 1rem 5rem 0 0;
+
+        h2{
+            font-size: 2.5rem;
+            font-family: $font-titulo;
+        }
+        p{
+            font-family: $font-text;
+            margin: 1.5rem 0 1rem;
+        }
+    }
+    img{
+        margin: 0 2rem 0 0;
+        width: 30vw;
+    }
+    .icones-sobre{
+        display: flex;
+        img{
+            margin: 0.2rem;
+            width: 5vw;
+        }
+    }
+} 
+footer{
+    background-color: $cor-fundo;
+   height: auto;
+   display: flex;
+   margin: 1rem 0 0;
+   #email{
+   padding: 5rem 1rem;
+    }
+    .redes-text{
+       margin: 1rem 2rem;
+      width: 35vw;
+      border-right: solid rgba(0, 0, 0, 0.232);
+      h6{
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem 0;
+      }
+        img{
+            margin: 1rem 0;
+            width: 3vw;
+        }
+    }
+}
+@media (max-width:993px){
+    .projeto-page{
+        padding: 0.5rem;
+
+        p{
+            width: 100%;
+        }
+     
+        .projeto-item{
+            margin: 0 1rem;
+        }
+    }
+    .projeto-page{
+        .projeto-item{
+            .projeto-icons{
+                img{
+                    width: 5vw;
+                }
+            }
+        }
+      }
+      .sobre-page{
+        .sobre-text{
+            margin:  0 2rem;
+        }
+        .sobre-image{
+            img{
+                width: 40vw;
+                
+            margin: 5rem 0;
+            }
+        }
+      }
+
+}
+@media (max-width:800px){
+    .nav-bar{
+        margin: 0;
+        padding: 1rem;
+
+        img{
+            width: 5vw;
+        }
+       ul{
+        margin: 0;
+                li{
+                    padding: 0 1rem;
+
+                    a{
+                        padding: 0 1rem;
+                    }
+                }
+       }
+    }
+
+    .intro-page{
+
+        .intro-image{
+            background-color: $cor-fundo;
+            margin: 1rem 2rem;
+
+            img{
+                width: 30vw;
+            }
+        }
+    }
+    .projeto-page{
+        width: 100%;
+        .projeto-item{
+            margin: 0 0.5rem;
+        }
+    }
+    .sobre-page{
+        padding: 0;
+        img{
+          width: 30vw;
+            margin: 5rem 1rem;
+        }
+    }
+    .projeto-page{
+        .projeto-item{
+            .projeto-icons{
+                img{
+                    width: 5vw;
+                }
+            }
+        }
+      }
+
+      .sobre-page{
+        .sobre-image{
+          img{
+              margin: 5rem 1rem;
+          }
+        }  
+       }
+         
+}
+@media (max-width:716px){
+        .intro-page{
+            .intro-text{
+                h1{
+                    font-size: 1.8rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+            .intro-image{
+                padding: 0;
+                margin: 0 1rem;
+                height: auto;
+                img{
+                    width: 40vw;
+                }
+            }
+        }
+      .projeto-page{
+        .projeto-item{
+            .projeto-icons{
+                img{
+                    width: 5vw;
+                }
+            }
+        }
+      }
+     .sobre-page{
+      .sobre-image{
+        img{
+            margin: 5rem 1rem;
+        }
+      }  
+     }
+      
+
+}
+@media (max-width:616px){
+    .intro-page{
+        padding: 1rem;
+        .intro-image{
+             margin: 0;
+            padding: 0;
+            height: 39vh;
+           img{
+            width: 30vw;
+            position: relative;
+           }
+        }
+    }
+    .projeto-page{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        justify-content: center;
+        .projeto-item{
+            width: 100%;
+            margin: 0;
+            box-shadow: none;
+            border: 0;
+            .projeto-icons{
+                img{
+                    width: 5vw;
+                }
+            }
+
+            
+
+        }
+    }
+    .sobre-page{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        img{
+            width: 40vw;
+        }
+
+
+        .sobre-text{
+            margin: 0;
+            .icones-sobre{
+                padding: 1rem;
+            }
+        }
+    }
+    footer{
+        #email{
+           display: flex;
+           flex-direction: column;
+            strong{
+                padding: 1rem;
+            }
+        }
+    }
+}
+@media (max-width:500px){
+  
+    .nav-bar{
+        display: none;
+    }
+    .intro-page{
+       display: flex;
+       flex-direction: column-reverse;
+       align-items: center; 
+       .intro-text{
+        margin: 1rem 0;
+
+        p{
+            width: 100%;
+        }
+       }
+       
+       .intro-image{
+        border-radius: 100%;
+        width: 40vw;
+        height: auto;
+        
+        img{
+            width: 40vw;
+        }
+        
+       }
+    }
+    header{
+        height: 10vh;
+        text-align: center;
+        .botao-box{
+            width: 100%;
+            display: block;
+            #botao-nav-bar{
+                background-color: #f0f0f0e0;
+                margin: 1rem 2rem ;
+                display: block;
+                padding: 1rem;
+                position: fixed;
+                right: 0;
+                z-index: 10;
+                border: 0;
+                border-radius: 10px;
+                
+                
+            }
+        }
+
+    }
+   
+   .nav-bar-mobile{
+    z-index: 1;
+    background-color: #F0F0F0;
+   position: fixed;
+   width: 100%;
+    padding: 1rem;
+    li{
+      list-style: none;
+      padding: 1rem;
+        a{
+            text-decoration: none;
+            padding:  0 0.5rem 1rem;
+            font-size: 1.5rem;
+            color:rgba(0, 0, 0, 0.421);
+            
+        }
+        i{
+            color:rgba(0, 0, 0, 0.421);
+         
+        }
+        &:hover{
+            a{
+                color: #A6D6F6
+                
+            }
+            i{
+                color: #A6D6F6
+               
+            }
+        }
+    }
+   }
+   .projeto-page{
+    display: flex;
+    flex-direction: column;
+    
+    .projeto-item{
+        margin: 1rem 0 1rem;
+
+        .projeto-icons{
+            img{
+                width: 10vw;
+            }
+        }
+    }
+   }
+   .sobre-page{
+    
+    .sobre-image{
+        margin: 0 0 1rem;
+        img{
+            width:60vw;
+        }
+    }
+    .icones-sobre{
+        padding: 0;
+        margin: 0.5rem 0 0;
+       
+        img{
+            width: 15vw;
+        }
+          
+    }
+    .sobre-text{
+        padding: 1rem;
+    }
+   }
+   footer{
+    display: flex;
+    flex-direction: column;
+
+    #email{
+        padding:  1rem 0;
+        text-align: center;
+    }
+   .redes-icon{
+    img{
+        width: 10vw;
+    }
+
+   } 
+    
+    .redes-text{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        p{
+            padding: 1rem;
+           width: 100%;
+        }
+       
+    }
+    }
+
+}

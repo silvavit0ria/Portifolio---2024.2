@@ -1,0 +1,254 @@
+$font-titulo:"Atkinson Hyperlegible", sans-serif;
+$font-text: "Inter", sans-serif;
+$cor-fundo:#0b9af982;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+
+header{
+   display: flex;
+   justify-content: space-between;
+   background-color: #F0F0F0;
+   border-bottom:solid rgba(0, 0, 0, 0.079);
+    a{
+        margin: 0 5rem;
+    }
+   .botao-home{
+   margin: 0 5rem 0;
+     border: 0;
+    i{
+        padding: 1rem;
+        color: $cor-fundo;
+        cursor: pointer;
+      
+    }
+}
+    img{
+        width: 3vw;
+        transition: transform 0.9s ease;
+    }
+    img:hover{
+        transform: scale(1.10);
+    }
+   
+}
+.projeto-page{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+        .projeto-item{
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            border-bottom: solid rgba(0, 0, 0, 0.04);
+            
+
+             h2{
+            text-align: center;
+            font-family: $font-titulo;
+            font-weight: 800;
+            padding: 1rem 0 0;
+  
+        }
+            
+          
+           figure{
+                img{
+                    width: 100%;
+                    transition: transform 0.9s ease;
+
+                }
+                figcaption{
+                    text-align: center;
+                    font-family: $font-text;
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                  
+                }
+           }
+           &:hover{
+            background-color:#0b9af925;
+            border-radius: 20px;
+            figcaption{
+
+                p{
+                    display: block;
+                    font-size: 1rem;
+                    color: red;
+                }
+            }
+          
+            h2{
+                transition: all 0.3s ease;
+               color: rgba(0, 0, 0, 0.318);
+    
+            }
+            #image-projeto{
+                transform: scale(1.09);
+            }
+            
+        }  
+        }
+        .projeto-icons{
+            padding: 1rem;
+            margin-top: auto;
+            text-align: end;
+           img{
+            width: 2vw;
+           }
+        }
+       
+           
+
+}
+footer{
+    background-color: $cor-fundo;
+   height: auto;
+   display: flex;
+   margin: 1rem 0 0;
+   #email{
+   padding: 5rem 1rem;
+    }
+    .redes-text{
+       margin: 1rem 2rem;
+      width: 35vw;
+      border-right: solid rgba(0, 0, 0, 0.232);
+      h6{
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem 0;
+      }
+        img{
+            margin: 1rem 0;
+            width: 3vw;
+        }
+    }
+}
+@media (max-width:993px){
+    .projeto-page{
+       padding: 0;
+       
+       .projeto-item{
+        margin: 1rem 0;
+        .projeto-icons{
+            img{
+                width: 4vw;
+            }
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+       
+       }
+    }
+}
+@media (max-width:800px){
+
+    header{
+        img{
+            width: 5vw;
+            margin:  1rem 0;
+        }
+        .botao-home{
+           padding: 1rem;
+    } 
+    }
+   
+
+    .projeto-page{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        justify-content: center;
+        .projeto-item{
+            width: 100%;
+           
+           
+            
+
+        }
+    }
+}
+@media (max-width:500px){
+    header{
+        background-color: #F0F0F0;
+       width: auto;
+
+        img{
+            width: 10vw;
+           
+        }
+        .botao-home{
+            margin: 1rem ;
+            padding: 0;
+            background-color:#0b9af93c;
+           position: fixed;
+           bottom: 0;
+           right: 0;
+           z-index: 10;
+           border-radius: 10px;
+            i{
+                display: block;  
+               color: white;
+            }
+            
+            
+            
+        }
+        .botao-home:hover{
+               background-color: white;
+               i{
+                color: $cor-fundo;
+               }
+        }
+    }
+    .projeto-page{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        .projeto-item{
+            img{
+                width: 100%;
+
+            }
+            .projeto-icons{
+               img{
+                width: 5vw;
+               }
+            }
+        }
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+
+        #email{
+            padding:  1rem 0;
+            text-align: center;
+        }
+       .redes-icon{
+        img{
+            width: 10vw;
+        }
+
+       } 
+        
+        .redes-text{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 100%;
+            p{
+                padding: 1rem;
+               width: 100%;
+            }
+           
+        }
+    }
+}

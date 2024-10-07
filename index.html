@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Portifolio - Vitoria Silva</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <a href="https://www.linkedin.com/in/vitoria01silva/" target="_blank"
+          ><img src="image/linkedin.png" alt="imagem logo"
+        /></a>
+        <ul>
+          <li><a href="#projeto-page">Projetos</a></li>
+          <li><a href="#email">Contato</a></li>
+          <li><a href="#sobre-page">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="botao-box">
+       <button id="botao-nav-bar"><i class="fa-solid fa-bars-staggered fa-xl" ></i></button>  
+      </div>
+      <div class="nav-bar-mobile" id="nav-bar-mobile">
+          <li><i class="fa-solid fa-sheet-plastic fa-xl"></i></i><a href="#projeto-page">Projetos</a></li>
+          <li><i class="fa-solid fa-inbox fa-xl"></i></i><a href="#email">Contato</a></li>
+          <li><i class="fa-solid fa-id-card-clip fa-xl"></i></i><a href="#sobre-page">Sobre</a></li>
+      </div>
+     
+    </header>
+    <main>
+      <section class="intro-page">
+        <div class="intro-text">
+          <h1>Vitória Silva</h1>
+          <p>
+            Estudante de Tecnologia | Desenvolvimento de Sistemas e Software.
+          </p>
+        </div>
+        <div class="intro-image" id="intro-image">
+          <img src="image/ia-vitoria.png" alt="Vitoria foto IA" />
+        </div>
+      </section>
+
+      <section class="projeto-page" id="projeto-page">
+        <div class="projeto-item" id="projeto-item">
+          <h2 id="projeto1">Vai na Web</h2>
+          <figure>
+            <a
+              href="https://silvavit0ria.github.io/Desafio_FiinalVNW/"
+              target="_blank"
+              ><img
+                src="image/projeto01.png"
+                alt="Imagem do Projeto 1"
+                id="image-projeto"
+            /></a>
+            <figcaption>
+              O Desafio Final do Módulo 1 do Vai na Web consistiu em recriar o
+              design fornecido no Figma, criando uma réplica de um site básico
+              da L'Oréal Paris, utilizando os conhecimentos adquiridos ao longo
+              do primeiro módulo.
+            </figcaption>
+          </figure>
+          <div class="projeto-icons">
+            <img src="image/css.png" alt="Ícone CSS" aria-label="CSS" />
+            <img src="image/html.png" alt="Ícone HTML" aria-label="HTML" />
+            <img src="image/sass.png" alt="Ícone SASS" aria-label="SASS" />
+          </div>
+        </div>
+        <!-- SEPARAÇÃO  -->
+        <div class="projeto-item">
+          <h2 id="projeto1">Landing Page - Depilação</h2>
+          <figure>
+            <a
+              href="https://silvavit0ria.github.io/Landing-Page-de-Depila-o/"
+              target="_blank"
+              ><img
+                src="image/projeto02.png"
+                alt="Imagem do Projeto 2 landing page depilação"
+                id="image-projeto"
+            /></a>
+            <figcaption>
+              Este projeto foi desenvolvido utilizando JavaScript, HTML5, CSS e
+              SASS, com o objetivo de proporcionar uma experiência fluida e
+              intuitiva para o usuário. A página permite que o usuário agende
+              consultas de depilação de forma simples, clicando em botões que o
+              direcionam diretamente para a vendedora responsável. Cada botão
+              foi configurado para redirecionar corretamente ao destino
+              apropriado, garantindo eficiência e praticidade na interação.
+            </figcaption>
+          </figure>
+          <div class="projeto-icons">
+            <img src="image/js.png" alt="Ícone JS" aria-label="JS" />
+            <img src="image/css.png" alt="Ícone CSS" aria-label="CSS" />
+            <img src="image/html.png" alt="Ícone HTML" aria-label="HTML" />
+            <img src="image/sass.png" alt="Ícone SASS" aria-label="SASS" />
+          </div>
+        </div>
+        <!-- SEPARAÇÃO  -->
+        <div class="projeto-item">
+          <h2 id="projeto3">Projeto 1</h2>
+          <figure>
+            <img
+              src="image/projeto01.png"
+              alt="Imagem do Projeto 1"
+              id="image-projeto"
+            />
+            <figcaption>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Cupiditate tempore vitae adipisci incidunt, ducimus non accusamus
+              labore minus voluptate dignissimos assumenda reprehenderit rerum
+              eaque! Quo ea vel optio sit sed!
+            </figcaption>
+          </figure>
+          <div class="projeto-icons">
+            <img src="image/css.png" alt="Ícone CSS" aria-label="CSS" />
+            <img src="image/html.png" alt="Ícone HTML" aria-label="HTML" />
+            <img src="image/sass.png" alt="Ícone SASS" aria-label="SASS" />
+          </div>
+        </div>
+      </section>
+      <section class="botao-projeto">
+        <button id="botao-projeto"><a href="projetos.html">Ver mais Projetos</a></button>
+      </section>
+
+      <section class="sobre-page" id="sobre-page">
+        <div class="sobre-image">
+          <img src="image/imagem1.jpg" alt="imagem ilustrativa" />
+        </div>
+        <div class="sobre-text">
+          <h2>Sobre mim</h2>
+          <p>
+            Sou uma desenvolvedora entusiasmada por criar aplicações web
+            interativas e responsivas. Ao longo da minha trajetória, adquiri uma
+            sólida base técnica em HTML, CSS, JavaScript, React.js e Vue.js, e
+            estou constantemente buscando maneiras de expandir meu conhecimento.
+            Além disso, tenho experiência em gerenciamento de sistemas e suporte
+            técnico.
+          </p>
+          <p>
+            Entre minhas habilidades interpessoais, destaco a capacidade de
+            aprender rapidamente e de trabalhar em equipe, colaborando
+            efetivamente com outros para desenvolver soluções tecnológicas
+            inovadoras. Estou animada para aplicar minha experiência e
+            contribuir em projetos desafiadores no campo do desenvolvimento.
+          </p>
+          <div class="icones-sobre">
+            <img src="https://camo.githubusercontent.com/10c7a8fa2cf317cc7c4af6f13efac086a9f0ea010f0dfc746c94e5cde310b339/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f48544d4c352d4533344632363f7374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465" alt="imagem html">
+            <img src="https://camo.githubusercontent.com/001d4637c08910acf414f12a1682879a1f99867f6f9a3550f0541e7d03dd34a2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f435353332d3135373242363f7374796c653d666f722d7468652d6261646765266c6f676f3d63737333266c6f676f436f6c6f723d7768697465" alt="imagem css3">
+            <img src="https://camo.githubusercontent.com/b50d4b5449ac9bed0fc02238425fd56db93011d5019563595023ff0bb1a02162/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d4637444631453f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d626c61636b" alt="imagem JavaScript">
+            <img src="https://camo.githubusercontent.com/3467eb8e0dc6bdaa8fa6e979185d371ab39c105ec7bd6a01048806b74378d24c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f52656163742d3230323332413f7374796c653d666f722d7468652d6261646765266c6f676f3d7265616374266c6f676f436f6c6f723d363144414642" alt="iamgem React">
+            <img src="https://camo.githubusercontent.com/29f4bdfbd7dd2ed5be81e4a8c67e6333760845c51902e36f18682e95442dbfcf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176612d4544384230303f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661266c6f676f436f6c6f723d7768697465" alt="imagem java">
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="redes-text" id="redes-text">
+        <h6>Vamos nos conectar</h6>
+        <p>
+          Vamos construir algo incrível juntos! Siga-me nas redes sociais ou
+          mande um olá para discutir novas ideias e projetos que façam a
+          diferença.
+        </p>
+        <div class="redes-icon">
+          <a href="https://github.com/silvavit0ria" target="_blank"
+            ><img src="image/github (1).png" alt="logo github"
+          /></a>
+          <a href="https://wa.me/5521986240971" target="_blank"
+            ><img src="image/whatsapp.png" alt="logo whatsapp"
+          /></a>
+          <a href="https://www.instagram.com/silva.vit0ria/" target="_blank"
+            ><img src="image/instagram.png" alt="logo instagram"
+          /></a>
+        </div>
+      </div>
+      <p id="email">vitoria.serafimtech@gmail.com |<strong> (21)98624-0971</strong> </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
